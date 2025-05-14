@@ -16,4 +16,4 @@ spec:
       - name: kubeapp
         image: <your-dockerhub-username>/kubeapp:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 8090
