@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "your-dockerhub-username/kubeapp:latest"
+        DOCKER_IMAGE = "umamahesh571/kubeapp:latest"
         KUBE_CONFIG = credentials('kubeconfig') // Jenkins credential (secret file)
         DOCKER_CREDENTIALS_ID = 'dockerhub-credentials' // Jenkins credentials for DockerHub
     }
@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-username/springboot-kubeapp.git'
+                git 'https://github.com/umamahesh571/springboot-kubeapp.git'
             }
         }
 
