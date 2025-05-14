@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_IMAGE = "umamahesh571/kubeapp:latest"
         KUBE_CONFIG = credentials('kubeconfig') // Jenkins credential (secret file)
-        DOCKER_CREDENTIALS_ID = 'dockerhub-credentials' // Jenkins credentials for DockerHub
+        DOCKER_CREDENTIALS_ID = 'dockerhub' // Jenkins credentials for DockerHub
     }
 
     stages {
