@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                 git branch: 'main', url: ''
+                 git branch: 'main', url: 'https://github.com/umamahesh571/springboot-sample-kubeapp.git'
             }
         }
 
